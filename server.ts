@@ -149,8 +149,17 @@ const mongoClientOptions: MongoClientOptions = {
   retryReads: false,
 };
 
+const args = process.argv;
+
+if (args.length === 0) {
+  throw new Error("Please provide a database URL as a command-line argument");
+}
+
 // MongoDB setup (don't connect yet)
-const mongoUrl = process.env.MONGODB_URI || "mongodb://localhost:27017";
+const uri = JSON.stringify(args[2], null, 2);
+logToFile("Uri in args " + uri);
+
+const mongoUrl = uri || "mongodb://localhost:27017";
 let client: MongoClient | null = null;
 
 // Create MCP server
@@ -408,7 +417,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 
       // Re-enable MCP stdout
       useMcpStdio = originalMcpStdio;
-
+      console.log(result);
       // Return results
       return {
         contents: [
