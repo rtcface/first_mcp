@@ -1,0 +1,39 @@
+2025-04-22T18:19:26.174Z Startup: Initializing server with stdout disabled
+2025-04-22T18:19:26.175Z Startup: Pre-connecting to MongoDB...
+2025-04-22T18:19:37.220Z Successfully connected to MongoDB
+2025-04-22T18:19:37.220Z Startup: MongoDB pre-connection successful
+2025-04-22T18:19:37.220Z Startup: Creating StdioServerTransport...
+2025-04-22T18:19:37.221Z Startup: Enabling MCP JSON communication
+2025-04-22T18:19:37.221Z Startup: Connecting to transport...
+2025-04-22T18:19:37.221Z Startup: MCP server connected to transport successfully
+2025-04-22T18:19:37.221Z Startup: Server fully initialized and ready
+2025-04-22T18:19:59.487Z Startup: Initializing server with stdout disabled
+2025-04-22T18:19:59.488Z Startup: Pre-connecting to MongoDB...
+2025-04-22T18:20:12.556Z Successfully connected to MongoDB
+2025-04-22T18:20:12.556Z Startup: MongoDB pre-connection successful
+2025-04-22T18:20:12.556Z Startup: Creating StdioServerTransport...
+2025-04-22T18:20:12.557Z Startup: Enabling MCP JSON communication
+2025-04-22T18:20:12.557Z Startup: Connecting to transport...
+2025-04-22T18:20:12.557Z Startup: MCP server connected to transport successfully
+2025-04-22T18:20:12.557Z Startup: Server fully initialized and ready
+2025-04-22T18:20:27.371Z Read resource error: Invalid resource URI: collection name is required
+2025-04-22T18:20:49.491Z Read resource error: Invalid resource URI: collection name is required
+2025-04-22T18:24:23.966Z Call tool error: [
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "null",
+    "path": [
+      "limit"
+    ],
+    "message": "Expected number, received null"
+  }
+]
+2025-04-22T18:27:00.116Z Read resource error: Invalid resource URI: collection name is required
+2025-04-22T18:27:47.151Z Read resource error: Invalid resource URI: collection name is required
+2025-04-22T18:42:19.784Z Received SIGINT, shutting down...
+2025-04-22T18:42:19.784Z Received SIGINT, shutting down...
+2025-04-22T18:42:19.784Z Closing MongoDB connection...
+2025-04-22T18:42:19.784Z Closing MongoDB connection...
+2025-04-22T18:42:19.787Z MongoDB connection closed
+2025-04-22T18:42:19.789Z MongoDB connection closed
